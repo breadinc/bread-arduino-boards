@@ -19,7 +19,7 @@
 # For more info:
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
-name=Atmel SAM D21/R21 E
+name=Atmel ATSAMD21E18A Pull request # (Build )
 version=1.7.6
 
 # Compile variables

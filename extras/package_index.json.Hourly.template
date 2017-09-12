@@ -1,12 +1,12 @@
 {
   "packages": [
     {
-      "name": "femtoduino",
-      "maintainer": "FemtoDuino",
-      "websiteURL": "https://github.com/femtoduino/ArduinoCore-atsamd21e18a",
-      "email": "support@femtoduino.com",
+      "name": "bread-arduino-boards",
+      "maintainer": "Breadware, Inc.",
+      "websiteURL": "https://github.com/breadinc/bread-arduino-boards",
+      "email": "support@breadware.com",
       "help": {
-        "online": "http://www.arduino.cc/en/Reference/HomePage"
+        "online": "https://breadware.com/"
       },
       "platforms": [
         {
@@ -14,7 +14,7 @@
           "architecture": "samd",
           "version": "%%VERSION%%",
           "category": "Arduino",
-          "url": "http://downloads.femtoduino.com/%%FILENAME%%",
+          "url": "https://arduino-boards.breadware.com/%%FILENAME%%",
           "archiveFileName": "%%FILENAME%%",
           "checksum": "SHA-256:%%CHECKSUM%%",
           "size": "%%SIZE%%",
@@ -22,11 +22,7 @@
             {
               "name": "Atmel ATSAMD21E18A"
             },
-            {
-              "name": "Atmel ATSAMR21E18A"
-            }
-          ],
-          "toolsDependencies": [
+            "toolsDependencies": [
             {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",

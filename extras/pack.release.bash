@@ -22,12 +22,13 @@ VERSION=`grep version= platform.txt | sed 's/version=//g'`
 PWD=`pwd`
 FOLDERNAME=`basename $PWD`
 THIS_SCRIPT_NAME=`basename $0`
+ARCHIVE_PREFIX='bread-arduino-boards'
 
-rm -f atsamd21e18a-$VERSION.tar.bz2
+ARCHIVE_NAME="$ARCHIVE_PREFIX-$VERSION.tar.bz2"
+
+rm -f $ARCHIVE_NAME || echo "No archive to delete at $ARCHIVE_NAME; Skipping..."
 
 cd ..
-tar --transform "s|$FOLDERNAME|$FOLDERNAME-$VERSION|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf atsamd21e18a-$VERSION.tar.bz2 $FOLDERNAME
+tar --transform "s|$FOLDERNAME|$FOLDERNAME-$VERSION|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $ARCHIVE_NAME $FOLDERNAME
 cd -
-
-#mv ../atsamd21e18a-$VERSION.tar.bz2 .
 
